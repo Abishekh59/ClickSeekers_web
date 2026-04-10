@@ -12,6 +12,8 @@ import SisanPortrait from "@/assets/Sisan Baniya.jpeg";
 import AjayPortrait from "@/assets/Ajay maharjan.jpg";
 import PhotokichwaPortrait from "@/assets/photokichwa.jpg";
 import NishaPortrait from "@/assets/Nisha gurung.jpg";
+import ClickSeekersAppQR from "@/assets/ClickSeekersApp.png";
+
 
 const leaderboard = [
   { rank: 1, name: "Abishekh Joshi", badge: "Golden Lens", badgeIcon: GoldenLensPng, score: 7240, avatar: AbishekhPortrait, medalColor: "text-[#6aa6ff] bg-[#6aa6ff]/10" },
@@ -41,44 +43,34 @@ const DownloadSection = () => {
               Download<br /><span className="text-[#60a5fa]">ClickSeekers</span>
             </h2>
             <p className="text-blue-100/70 mb-10 max-w-md text-lg leading-relaxed font-medium">
-              Join Nepal's fastest-growing photography marketplace. Available on Android now — iOS coming soon.
+              Join Nepal's fastest-growing photography marketplace. Available exclusively for Android.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <a
-                href="#"
-                className="flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-[#60a5fa] text-[#064c73] font-bold text-lg hover:bg-[#6aa6ff] transition-all shadow-xl shadow-[#60a5fa]/25"
+                href="https://expo.dev/artifacts/eas/g3hTpZvjnVVAGCdxmgzmU5.apk"
+                className="flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-[#60a5fa] text-[#064c73] font-bold text-lg hover:bg-[#6aa6ff] transition-all shadow-xl shadow-[#60a5fa]/25 w-full sm:w-auto"
               >
                 <Download size={22} />
                 Download APK
                 <span className="text-xs font-bold opacity-70">(Android)</span>
               </a>
-              <a
-                href="#"
-                className="flex items-center justify-center gap-3 px-8 py-5 rounded-2xl border-2 border-white/20 text-white font-bold text-lg hover:bg-white/10 hover:border-white/40 transition-all"
-              >
-                <Smartphone size={22} />
-                Join Beta
-                <span className="text-xs font-bold opacity-60">(iOS)</span>
-              </a>
             </div>
 
             {/* QR Code decorative */}
-            <div className="inline-flex flex-col items-start gap-3 p-5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
-              <p className="text-xs text-blue-200/60 font-bold uppercase tracking-widest">Scan to Download</p>
-              <div className="w-28 h-28 bg-white rounded-xl flex items-center justify-center">
-                <div className="grid grid-cols-5 gap-1 p-2">
-                  {Array.from({ length: 25 }).map((_, i) => (
-                    <div
-                      key={i}
-                      className={`w-3.5 h-3.5 rounded-sm ${
-                        [0, 1, 2, 4, 5, 6, 7, 10, 12, 14, 15, 17, 18, 19, 20, 22, 23, 24].includes(i)
-                          ? "bg-[#064c73]"
-                          : "bg-white"
-                      }`}
-                    />
-                  ))}
+            <div className="inline-flex flex-col items-start gap-4 p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm">
+              <div className="flex items-center gap-3 mb-1">
+                <div className="w-8 h-8 rounded-lg bg-[#60a5fa]/20 flex items-center justify-center">
+                  <Smartphone size={16} className="text-[#60a5fa]" />
                 </div>
+                <p className="text-xs text-blue-200/60 font-bold uppercase tracking-widest">Scan to Download</p>
+              </div>
+              <div className="w-32 h-32 bg-white rounded-2xl flex items-center justify-center p-2 overflow-hidden">
+                <img 
+                  src={ClickSeekersAppQR} 
+                  alt="Download ClickSeekers QR" 
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
           </motion.div>

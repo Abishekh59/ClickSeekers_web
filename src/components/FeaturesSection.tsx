@@ -175,7 +175,7 @@ const sharedFeatures = [
   { icon: MapPin, label: "In-app GPS — pin & navigate" },
   { icon: MessageSquare, label: "Encrypted messaging system" },
   { icon: Shield, label: "Report & block safety system" },
-  { icon: SmartphoneIcon, label: "Available on Android & iOS" },
+  { icon: SmartphoneIcon, label: "Available on Android" },
 ];
 
 const FeatureCard = ({
