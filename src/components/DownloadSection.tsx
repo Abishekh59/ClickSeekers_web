@@ -48,7 +48,7 @@ const DownloadSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <a
-                href="https://expo.dev/artifacts/eas/g3hTpZvjnVVAGCdxmgzmU5.apk"
+                href="https://expo.dev/artifacts/eas/bTBHSdBLbTxe6Tx3rbsi2R.apk"
                 className="flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-[#60a5fa] text-[#064c73] font-bold text-lg hover:bg-[#6aa6ff] transition-all shadow-xl shadow-[#60a5fa]/25 w-full sm:w-auto"
               >
                 <Download size={22} />
