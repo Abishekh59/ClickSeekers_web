@@ -236,11 +236,10 @@ const FeaturesSection = () => {
               <button
                 key={t}
                 onClick={() => setTab(t)}
-                className={`relative px-8 py-3 rounded-xl text-sm font-black transition-all ${
-                  tab === t
+                className={`relative px-8 py-3 rounded-xl text-sm font-black transition-all ${tab === t
                     ? "bg-[#064c73] text-white shadow-lg shadow-[#064c73]/25"
                     : "text-slate-500 hover:text-[#064c73]"
-                }`}
+                  }`}
               >
                 {tab === t && (
                   <motion.div layoutId="tab-bg" className="absolute inset-0 rounded-xl bg-[#064c73]" style={{ zIndex: -1 }} />
